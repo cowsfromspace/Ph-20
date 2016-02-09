@@ -1,0 +1,25 @@
+# Lissajous Figures
+# Ph 20, Lab 1
+# Problem 4
+
+The carrier frequency is 2pi* (f1 + f2) / 2 but the larger one is 2pi*(f1 - f2) (not /2), since beats occur at any time the slower wave is at a magnitude of 0, which occurs twice in a sequence. This can also be seen as the carrier wave alternating between +1 and -1, meaning the image of both versions of the slow wave can be seen in the signal. 
+
+NOTE: Since dt is small, N needs to have a very large range (N = 5000 for all here), the x axis may not make things clear. In these examples, the x axis is really a counter for n < N which gives t = n * dt.
+
+Ex 4-1: 1 1.01 1 1 0.005 5000
+This looks like a sinusoid with 2pi*(f1 + f2) / 2, but has some strange features later on
+that do not seem to be significant. 
+
+Ex 4-2: 1 1.05 1 1 0.005 5000
+Similar curve; obvious growth later on...
+
+Ex 4-3: 1 1.10 1 1 0.005 5000
+The sinusoid is enveloped in another larger one, much more obviously in this.
+
+Ex 4-4: 10 10.1 1 1 0.005 5000
+Despite the huge jump, this makes the beats much more obvious; the 10 creates 
+a very fast alternation, while the 0.1 offset creates a small offset which 
+slowly adds up.
+
+Ex 4-5: 10 11.0 1 1 0.005 5000
+A beat is obvious: once every 1 they cycle through.

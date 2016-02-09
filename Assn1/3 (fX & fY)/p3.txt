@@ -1,0 +1,95 @@
+# Lissajous Figures
+# Ph 20, Lab 1
+# Problem 3
+
+
+
+A. Convince that fX/fY being rational is identical to closed curve
+
+A closed curve with position (x(t) ,y(t)) will have a t' s.t. 
+(x(t), y(t)) = (x(t % t'), y(t % t')). 
+
+This means that a t' must exist such that 
+(x(t'), y(t')) = (x(0), y(0)). 
+
+If fX*t or fY*t are integers (and phi = 0), then the sinusoid has gone through
+an entire cycle. If fX = a/b and fY = c/d, then t' = b * d. Therefore, rational
+fX/fY gives a cyclic curve.
+
+If phi does not equal 0, using angle addition rules, it is obvious that
+y is now the sum of two sinusoids that will both repeat with frequency 
+fY. This will still allow the same process to happen and for the curve to close.
+
+Ax * sin(2pi fX t)     Ay * cos(2pi fY t + phi)
+ 
+Ex A1: 10 7 1 1 0 0.001 5000
+This obviously closes in the picture (a1.png). This is rational with t' = 1
+
+Ex A2: 1 2.1 1 1 0 0.005 5000
+This repeats with t' = 10, since 7.1 -> 71 (a2.png)
+
+Ex A3: 1 2.1 2 1 0 0.005 5000
+A stretch in one direction does not change the frequency. (a3.png)
+
+Ex A4: 1 2.1 2 1 1.57 0.005 5000
+A rotation dramatically changes the shape, but not the closure. (a4.png)
+
+Ex A5: 1 2.123123 2 1 1.24 0.005 5000
+Okay, while fX/fY is rational, it is approximately irrational on the small scales
+that we are discussing for t. It seems to constantly shift a slight amount to the
+side every iteration, creating a visually appealing, yet 
+
+Ex A6: 7 10 1 1 0 0.001 5000
+Switching the frequencies from Ex A1 yields a similar graph, flipped between x & y; this makes absolute sense, since aX = aY and cos & sin are so closely related. 
+
+
+B. DTRB fX/fY and the curve
+
+That value determines how many times the curve goes around. As seen
+below, the fraction will be the same whether or not fX and fY have a
+common factor (i.e. if fX/fY = l*fX'/l*fY' = fX'/fY' where l is an int).
+
+Ex B1: 1 2 1 1 0 0.001 5000
+We get a very nice lemniscate.
+
+Ex B2: 2 4 1 1 0 0.001 5000
+We still get an identical lemniscate!
+
+Ex B3: 1 2 2 1 0 0.001 5000
+We get a stretch, but since fX/fY is the same, it's the same shape.
+
+Ex B4: 10 20 1 1 0 0.001 5000
+We get an identical lemniscate to B1 & B2
+
+Ex B5: 10 21 1 1 0 0.001 5000
+Even a small change in a frequency obviously changes the shape.
+
+Ex B6: 2 1 1 1 0 0.001 5000
+Playing on Ex B1, this shows that switching the frequencies makes a very different picture. Instead of taking two paths around (creating a lemniscate), this repeats twice over the same path. This must have to do with the difference between sine and cosine and does not invalidate our conclusion just because the path is identical in both directions. 
+
+
+C. DTRB affect of phi when fx = fy 
+
+As seen above, we can choose arbitrary fx, fy so I'm using 1.
+Also, I will set Ax = 1, Ay = 2
+
+As phi -> pi / 2, the curve -> y = x. This is because cos(x) = sin(x + pi/2).
+
+In order to get two waves which are of the same frequency but in phase, you can
+shift the second curve until it makes a line or out of phase to make a circle. 
+This would be useful in tuning an oscilloscope. 
+
+Ex C1: 1 1 1 2 0 0.001 5000
+This is a simple ellipse.
+
+Ex C2: 1 1 1 2 0.4 0.001 5000
+The bounds remain the same but the ellipse is now rotated and squashed towards y = x
+
+Ex C3: 1 1 1 2 0.8 0.001 5000
+The squashing has become much more obvious.
+
+Ex C4: 1 1 1 2 1.54 0.001 5000
+SO MUCH SQUASHING
+
+Ex C5: 1 1 1 2 2.9 0.001 5000
+It seems like the critical value may be pi/2, as we have returned to normal looking curves.

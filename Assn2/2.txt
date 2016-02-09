@@ -1,0 +1,17 @@
+# Numerical Intro
+# Ph 20, Assn 2
+# Problem 1
+
+The local Simpson's Rule dictates that the integral from a to b of f(x)dx
+is approximately
+
+(b-a)/6 * (f(a) + 4*f(c) + f(b)) where c = (a+b)/2
+
+Setting b(n) = a(n+1) and 2*b(n)-a(n) = b(n+1), we have 
+
+x0 to x1
+x1 to x2
+x2 to x3
+...
+
+

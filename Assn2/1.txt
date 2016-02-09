@@ -1,0 +1,36 @@
+# Numerical Intro
+# Ph 20, Assn 2
+# Problem 1
+
+The local Simpson's Rule dictates that the integral from a to b of f(x)dx
+is approximately
+
+(b-a)/6 * (f(a) + 4*f(c) + f(b)) where c = (a+b)/2
+
+Setting h = (b-a)/2 yields,
+
+h/3 * (f(a) + 4*f(a+h) + f(a+2h))
+
+Using a 4th degree Taylor approx,
+
+I4 = h/3 * (f + 4*(f + hf' + h^2f''/2 + h^3f^3/3! + h^4f^4/4!) + (f + 2hf' + 4h^2f''/2 + 8h^3f^3/3! + 16h^4f^4/4!))
+I4 = 2hf + 2h^2f^1 + 4/3h^3f^2 + 2/3h^4f^3 + 20/3*4! * h^5/f^4
+
+From the integral of the Taylor expansion, 
+I = 2hf + 2h^2f^1 + 4/3h^3f^2 + 16/4!h^4f^3 + 32/5!h^5f^4 + O(h^6f^5)
+I - I4 = 1/90h^5f^4 + O(h^6f^5)
+
+To split (b-a) into N parts, we yield
+
+x_0 to x_1
+x_1 to x_2
+x_2 to x_3
+...
+x_N-1 to x_N
+
+(b-a)/6N * (f(x_0) + 4*f(c_1) + 2*f(x_1) + 4*f(c_2) + ... 4*f(c_N) + f(x_N))
+
+where c_i = (x_i-1 + x_i)/2
+
+I ~ f(a)H + f'(a)H^2/2! + f''(eta)*H^3/3!
+

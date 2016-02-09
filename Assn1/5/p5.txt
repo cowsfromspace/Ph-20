@@ -1,0 +1,16 @@
+# Lissajous Curves
+# Ph 20, Lab 1
+# Problem 5
+
+My primary programming experiences have been in Python (CS1) and Java (High School CS).
+I enjoy the Python language, especially how similar to pseudocode it often is. I had 
+some experience with these specific modules, but not extensively, so it was interesting
+to implement them again. I enjoyed being able to create an open-ended implementation related
+to a problem.
+
+Guido van Rossum's argument that people fall in love with Python because of its simplicity
+is absolutely my feeling. I encourage new people to learn this language because it is so easy
+to implement and the lack of compiling makes it a one-step debugging process. He understands
+why his language is loved by many, although the online writings didn't seem to address many
+of Python's problems- being somewhat too higher level, not being universal (2.7 is best Python),
+etc. 
