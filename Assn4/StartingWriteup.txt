@@ -1,5 +1,5 @@
 # This is my unofficial writeup starting right here. #
-
+# There's always an applicable xkcd: xkcd.com/1296/  #
 
 1. I had a folder on my desktop which contained all of my data. I then pushed this to github. I didn't create a new folder, just because I might as well have them all on there. 
 
@@ -16,4 +16,4 @@ cd Assn3
 cd ../
 git push
 git add -A
-git commit
+git commit -m "Some message that I forget"
