@@ -1,0 +1,4 @@
+$ git status
+
+# I'm pretty sure this is it
+*.DS_Store
