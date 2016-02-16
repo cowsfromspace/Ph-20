@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\newcommand{\insertPicture}[1]{\includegraphics[width=0.4\linewidth]{#1}}
+
+\begin{document}
+
+
+% Header %
+Jake Mattinson \hfill Ph20 Assn 3\\ \\ 
+
+\textbf{Problem 1}
+The following show the analysis, with blue being Explicit, green being implicit, and red being exact:
+
+% First One
+n = 1000, h = 0.01, x0 = 1, v0 = 0\\
+$$
+\begin{matrix}
+\insertPicture{x-1000-01-1-0} && \insertPicture{v-1000-01-1-0}
+\end{matrix}
+$$
+% Second
+n = 100, h = 0.1, x0 = 1, v0 = 0\\
+$$
+\begin{matrix}
+\insertPicture{x-100-1-1-0} && \insertPicture{v-100-1-1-0}
+\end{matrix}
+$$
+
+% Third
+n = 10000, h = 0.0001, x0 = 10, v0 = 10\\
+$$
+\begin{matrix}
+\insertPicture{x-10000-0001-10-10} && \insertPicture{v-10000-0001-10-10}
+\end{matrix}
+$$
+\newpage
+
+\textbf{Problem 2}
+The following show the analysis, with blue being explicit error and green being implicit error:\\
+
+% First One
+n = 1000, h = 0.01, x0 = 1, v0 = 0\\
+$$
+\begin{matrix}
+\insertPicture{ErrX-1000-01-1-0} && \insertPicture{ErrV-1000-01-1-0}
+\end{matrix}
+$$
+
+% Second
+n = 100, h = 0.1, x0 = 1, v0 = 0\\
+$$
+\begin{matrix}
+\insertPicture{ErrX-100-1-1-0} && \insertPicture{ErrV-100-1-1-0}
+\end{matrix}
+$$
+
+% Third
+n = 10000, h = 0.0001, x0 = 10, v0 = 10\\
+$$
+\begin{matrix}
+\insertPicture{ErrX-10000-0001-10-10} && \insertPicture{ErrV-10000-0001-10-10}
+\end{matrix}
+$$
+
+\end{document}
